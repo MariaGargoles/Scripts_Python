@@ -22,5 +22,5 @@ with open(list_csv, 'r') as csvfile:
 for ip in Doe_IPs:
     block_ip(ip)
 
-print("Se han bloqueado las siguientes IPs maliciosas: ")
+print("Se han bloqueado las IP's maliciosas ")
 print(Doe_IPs)
