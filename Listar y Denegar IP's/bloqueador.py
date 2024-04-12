@@ -2,25 +2,25 @@
 import csv
 import subprocess
 
-def bloquear_ip(ip):
+def block_ip(ip):
     subprocess.run(["sudo", "route", "add", "-host", ip, "reject"])
 
 
-archivo_csv = '/home/carpeta/IPs_maliciosas.csv'
+list_csv = '/home/carpeta/IPs_maliciosas.csv'
 
 
-ips_maliciosas = []
+Doe_IPs = []
 
 
-with open(archivo_csv, 'r') as csvfile:
+with open(list_csv, 'r') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         ip = row['IP']
-        ips_maliciosas.append(ip)
+        Doe_IPs.append(ip)
 
 
-for ip in ips_maliciosas:
-    bloquear_ip(ip)
+for ip in Doe_IPs:
+    block_ip(ip)
 
-print("Se han bloqueado las siguientes IPs maliciosas:")
-print(ips_maliciosas)
+print("Se han bloqueado las siguientes IPs maliciosas: ")
+print(Doe_IPs)
