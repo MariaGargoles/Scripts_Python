@@ -25,7 +25,7 @@ with open('/home/carpeta/IPs_maliciosas.csv', 'w', newline='') as csvfile:
 if subprocess.run(["echo", "$?"], capture_output=True).stdout.decode().strip() == "0":
     print("El archivo IPs_maliciosas ha sido creado correctamente")
     subprocess.run(["sudo", "chmod", "664", "/home/carpeta/IPs_maliciosas.csv"])
-    subprocess.run(["sudo", "chown", "seginf_director:carpeta", "/home/carpeta/IPs_maliciosas.csv"])
+    subprocess.run(["sudo", "chown", "user_root:carpeta", "/home/carpeta/IPs_maliciosas.csv"])
 
     with open('/home/carpeta/IPs_maliciosas.csv', 'a', newline='') as csvfile:
         writer = csv.writer(csvfile)
