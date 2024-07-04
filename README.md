@@ -6,7 +6,7 @@
 
 Tengo como objetivo proporcionar herramientas de automatización para fortalecer la seguridad en entornos Linux, mediante el uso de scripts en Python y Bash. Iré actualizando el repositorio con distintas carpetas, las cuales contendrán uno o varios scripts que se utilizarán conjuntamente para una funcionalidad concreta.
 
-## Funcionalidades
+# Funcionalidades
 
 **1. Abrimos con la primera funcionalidad que es :
 Listar y Denegar IP's**
@@ -30,7 +30,7 @@ Ejecuta el script principal..
 python main_script.py
 ```
 
-# Funcionalidades
+
 
 ## 2. Monitoreo y Alerta de Seguridad con RKHunter
 
